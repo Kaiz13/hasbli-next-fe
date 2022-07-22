@@ -43,6 +43,12 @@
             show-empty
           >
           </b-table>
+           
+             
+              <b-button variant="danger" size="sm" @click="deletePost(row)"
+                >SAVE</b-button
+              >
+    
         </b-card>
       </b-col>
     </b-row>
@@ -66,22 +72,6 @@ export default {
        post4:[],
     };
   },
-   
-  
-
-
- //<template v-slot:cell(actions)="row">
-             // <b-button
-               // :to="{ name: 'product-edit-id', params: { id: row.item.id } }"
-                //variant="warning"
-                //size="sm"
-                //>EDIT
-             // </b-button>
-              //<b-button variant="danger" size="sm" @click="deletePost(row)"
-                //>DELETE</b-button
-              //>
-           // </template>
-
 
 
  mounted() {
